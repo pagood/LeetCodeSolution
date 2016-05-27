@@ -6,6 +6,11 @@ import java.util.*;
 //		For "ABCD" and "EDCA", the LCS is "A" (or "D", "C"), return 1.
 //
 //		For "ABCD" and "EACB", the LCS is "AC", return 2.
+
+//Use memoization to speed up the evaluation. Often one gets both an efficient recursive method and an efficient iterative method out of this. It helps to look at the dag of dependencies of subproblems. 
+//Intuitively, larger subproblems depend on the smaller ones. The process can be viewed as filling a table.
+
+// 状态转移方程！
 public class LCS {
 	public int longestCommonSubsequence(String A, String B) {
         // write your code here
